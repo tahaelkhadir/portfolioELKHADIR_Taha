@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+
+{% block title %}Cybersécurité & Pentesting - Taha El Khadir{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="py-5 bg-dark text-white" style="margin-top: 70px;">
+    <div class="container">
+        <div class="text-center py-5">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="fas fa-shield-alt"></i> Cybersécurité & Pentesting
+            </h1>
+            <p class="lead">
+                Passionné par la sécurité offensive avec une approche méthodique du pentesting,<br>
+                de l'OSINT et de l'analyse de vulnérabilités.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Compétences -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="fas fa-tools text-primary"></i> Compétences Techniques</h2>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-search"></i> OSINT</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="small">
+                            <li>Collecte d'informations publiques</li>
+                            <li>Reconnaissance passive/active</li>
+                            <li>Investigation numérique</li>
+                            <li>Google Dorking</li>
+                            <li>Analyse de métadonnées</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="mb-0"><i class="fas fa-bug"></i> Pentesting</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="small">
+                            <li>Metasploit Framework</li>
+                            <li>Hydra (Brute Force)</li>
+                            <li>Exploitation de failles Web</li>
+                            <li>Injection SQL, XSS, CSRF</li>
+                            <li>Post-exploitation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="fas fa-network-wired"></i> Réseau</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="small">
+                            <li>Wireshark (analyse trafic)</li>
+                            <li>PowerShell scripting</li>
+                            <li>Nmap (scan de ports)</li>
+                            <li>ARP Spoofing, MITM</li>
+                            <li>Capture Handshake WPA/WPA2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projets -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="fas fa-project-diagram text-primary"></i> Projets Cybersécurité</h2>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"> Cossmose Tracker</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">Plateforme OSINT Avancée</h6>
+                        <p>Application web complète d'OSINT pour automatiser la reconnaissance numérique.</p>
+                        
+                        <h6 class="mt-3">Fonctionnalités:</h6>
+                        <ul class="small">
+                            <li> Analyse Instagram (profils, posts, hashtags)</li>
+                            <li> WHOIS Domain Lookup complet</li>
+                            <li> Google Dorks avancés</li>
+                            <li>Analyse métadonnées EXIF (GPS, etc.)</li>
+                        </ul>
+                        
+                        <div class="mt-3">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-info">Flask</span>
+                            <span class="badge bg-success">Bootstrap</span>
+                            <span class="badge bg-warning text-dark">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="mb-0"> Lab de Pentesting</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">Environnement Virtuel de Tests</h6>
+                        <p>Configuration complète d'un laboratoire de tests d'intrusion.</p>
+                        
+                        <h6 class="mt-3">Tests réalisés:</h6>
+                        <ul class="small">
+                            <li> Brute Force avec Hydra (SSH, FTP, HTTP)</li>
+                            <li> ARP Spoofing & MITM</li>
+                            <li> Capture Handshake WPA/WPA2</li>
+                            <li> Exploitation Web (SQL, XSS, CSRF)</li>
+                            <li> Social Engineering</li>
+                        </ul>
+                        
+                        <div class="mt-3">
+                            <span class="badge bg-dark">Kali Linux</span>
+                            <span class="badge bg-danger">Metasploit</span>
+                            <span class="badge bg-info">Wireshark</span>
+                            <span class="badge bg-warning text-dark">Hydra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0"> Bug Bounty - HackerOne</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">Recherche de Vulnérabilités</h6>
+                        <p>Participation active aux programmes Bug Bounty.</p>
+                        
+                        <ul class="small">
+                            <li>Injections SQL</li>
+                            <li>XSS (stocké, réfléchi)</li>
+                            <li>Bypass d'authentification</li>
+                            <li>CSRF et IDOR</li>
+                            <li>Rédaction de rapports CVE professionnels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0"> Analyse CVE & Rapports</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">Documentation Professionnelle</h6>
+                        <p>Recherche et analyse de vulnérabilités.</p>
+                        
+                        <ul class="small">
+                            <li>Résumé exécutif</li>
+                            <li>Méthodologie de test</li>
+                            <li>Preuves et PoC</li>
+                            <li>Classification CVSS</li>
+                            <li>Recommandations techniques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Outils -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="fas fa-toolbox text-primary"></i> Arsenal d'Outils</h2>
+        
+        <div class="text-center">
+            <div class="tool-item">Metasploit</div>
+            <div class="tool-item">Hydra</div>
+            <div class="tool-item">Wireshark</div>
+            <div class="tool-item">Burp Suite</div>
+            <div class="tool-item">SQLmap</div>
+            <div class="tool-item">Nmap</div>
+            <div class="tool-item">Aircrack-ng</div>
+            <div class="tool-item">John the Ripper</div>
+            <div class="tool-item">Hashcat</div>
+            <div class="tool-item">PowerShell</div>
+            <div class="tool-item">Python</div>
+            <div class="tool-item">Kali Linux</div>
+            <div class="tool-item">Maltego</div>
+            <div class="tool-item">Shodan</div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h3 class="mb-4">Intéressé par mes compétences en cybersécurité ?</h3>
+        <a href="{{ url_for('main.index') }}#contact" class="btn btn-primary btn-lg">
+            <i class="fas fa-envelope"></i> Me Contacter
+        </a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil - Taha El Khadir{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-7">
+                <div class="hero-content">
+                    <h1 class="display-3 fw-bold mb-3">Taha El Khadir</h1>
+                    <h2 class="h3 text-white mb-3">Étudiant en Master Informatique</h2>
+                    <h3 class="h5 mb-4" style="color: rgba(255,255,255,0.9);">
+                        Spécialisation : Cybersécurité & Développement Logiciel
+                    </h3>
+                    
+                    <p class="lead mb-4">
+                        Étudiant en <strong>Master Informatique à l'ISIMA - Clermont Auvergne INP</strong>, 
+                        avec <strong>4 ans d'études</strong> en ingénierie des systèmes d'information appliquée 
+                        à l'intelligence artificielle.
+                    </p>
+                    
+                    <p class="mb-4">
+                        Passionné par l'innovation technologique et la sécurité informatique, je développe 
+                        une double expertise en développement logiciel et cybersécurité offensive.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="{{ url_for('main.cybersecurity') }}" class="btn btn-light btn-lg">
+                            <i class="fas fa-shield-alt"></i> Cybersécurité
+                        </a>
+                        <a href="{{ url_for('main.development') }}" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-code"></i> Développement
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="hero-image"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formation Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-graduation-cap text-primary"></i> Mon Parcours Académique
+        </h2>
+        <h3 class="text-center h5 text-muted mb-5">4 Ans d'Études en Ingénierie des Systèmes d'Information</h3>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card education-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">2025 - 2027</h5>
+                        <h6 class="card-subtitle mb-2 fw-bold">Master Informatique</h6>
+                        <p class="card-text">
+                            <strong>ISIMA - Clermont Auvergne INP</strong><br>
+                            <small class="text-muted">Clermont-Ferrand</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card education-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">2024 - 2025</h5>
+                        <h6 class="card-subtitle mb-2 fw-bold">Master ISI & IA</h6>
+                        <p class="card-text">
+                            <strong>ESISA</strong><br>
+                            <small class="text-muted">Ingénierie des Systèmes d'Information et Intelligence Artificielle</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card education-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">2021 - 2024</h5>
+                        <h6 class="card-subtitle mb-2 fw-bold">Licence Ingénierie Logicielle</h6>
+                        <p class="card-text">
+                            <strong>ESISA</strong><br>
+                            <small class="text-muted">École Supérieure d'Ingénierie</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-certificate text-warning"></i> Certifications
+        </h2>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-shield-alt"></i> Cybersécurité - Cisco</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Ethical Hacker</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Cyber Threat Management</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Network Defense</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success"></i> Endpoint Security</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success"></i> English for IT 1</li>
+                        </ul>
+                        <div class="mt-3">
+                            <a href="https://www.credly.com/users/taha-el-khadir" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-100">
+                                <i class="fas fa-award"></i> Voir mes certifications sur Credly
+                                <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Expertise Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-briefcase text-primary"></i> Mes Domaines d'Expertise
+        </h2>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="expertise-card card h-100 shadow-sm border-primary">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">
+                            <i class="fas fa-shield-alt"></i> Cybersécurité & Pentesting
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-angle-right text-primary"></i> Tests d'intrusion et exploitation</li>
+                            <li><i class="fas fa-angle-right text-primary"></i> OSINT (Open Source Intelligence)</li>
+                            <li><i class="fas fa-angle-right text-primary"></i> Analyse réseau (Wireshark, PowerShell)</li>
+                            <li><i class="fas fa-angle-right text-primary"></i> Social Engineering</li>
+                            <li><i class="fas fa-angle-right text-primary"></i> Bug Bounty sur HackerOne</li>
+                            <li><i class="fas fa-angle-right text-primary"></i> Cryptographie</li>
+                        </ul>
+                        <a href="{{ url_for('main.cybersecurity') }}" class="btn btn-primary">
+                            Voir les projets <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="expertise-card card h-100 shadow-sm border-success">
+                    <div class="card-body">
+                        <h3 class="card-title text-success">
+                            <i class="fas fa-code"></i> Développement Logiciel & IA
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-angle-right text-success"></i> Développement Full-Stack</li>
+                            <li><i class="fas fa-angle-right text-success"></i> Architecture de systèmes</li>
+                            <li><i class="fas fa-angle-right text-success"></i> Intelligence Artificielle</li>
+                            <li><i class="fas fa-angle-right text-success"></i> Applications web modernes</li>
+                            <li><i class="fas fa-angle-right text-success"></i> Cloud (AWS, Azure)</li>
+                            <li><i class="fas fa-angle-right text-success"></i> Méthodologies Agile</li>
+                        </ul>
+                        <a href="{{ url_for('main.development') }}" class="btn btn-success">
+                            Voir les projets <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision Section -->
+<section class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">
+            <i class="fas fa-bullseye"></i> Ma Vision
+        </h2>
+        <p class="lead">
+            Concevoir des applications innovantes, intelligentes et sécurisées qui répondent à des besoins réels,<br>
+            tout en contribuant à rendre le cyberespace plus sûr pour tous.
+        </p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-envelope text-primary"></i> Me Contacter
+        </h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <div class="row text-center">
+                            <div class="col-md-3 mb-3">
+                                <a href="tahaelkhadir.cossmose@gmail.com" class="contact-link text-decoration-none">
+                                    <i class="fas fa-envelope fa-3x text-primary mb-2"></i>
+                                    <p class="mb-0 fw-bold">Email</p>
+                                    <small class="text-muted">tahaelkhadir.cossmose@gmail.com</small>
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <a href="https://www.linkedin.com/in/taha-el-khadir-87077b247/" target="_blank" rel="noopener noreferrer" class="contact-link text-decoration-none">
+                                    <i class="fab fa-linkedin fa-3x text-primary mb-2"></i>
+                                    <p class="mb-0 fw-bold">LinkedIn</p>
+                                    <small class="text-muted">Profil professionnel</small>
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <a href="https://github.com/tahaelkhadir?tab=repositories" target="_blank" rel="noopener noreferrer" class="contact-link text-decoration-none">
+                                    <i class="fab fa-github fa-3x text-dark mb-2"></i>
+                                    <p class="mb-0 fw-bold">GitHub</p>
+                                    <small class="text-muted">Mes projets</small>
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <a href="https://hackerone.com/tahaelkhadir" target="_blank" rel="noopener noreferrer" class="contact-link text-decoration-none">
+                                    <i class="fas fa-bug fa-3x text-danger mb-2"></i>
+                                    <p class="mb-0 fw-bold">HackerOne</p>
+                                    <small class="text-muted">Bug Bounty</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Section -->
+<section class="py-4 bg-primary text-white">
+    <div class="container">
+        <blockquote class="blockquote text-center mb-0">
+            <p class="mb-0">
+                <i class="fas fa-quote-left"></i>
+                La sécurité n'est pas un produit, mais un processus continu d'amélioration et d'apprentissage.
+                <i class="fas fa-quote-right"></i>
+            </p>
+        </blockquote>
+    </div>
+</section>
+{% endblock %}
